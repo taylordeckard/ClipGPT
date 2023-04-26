@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "keyboardshortcuts",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sindresorhus/KeyboardShortcuts",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d168f629edcd687383e18c908168520b4f156324"
+      }
+    },
+    {
+      "identity" : "openai",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MacPaw/OpenAI",
+      "state" : {
+        "revision" : "65748811327527fad88a1a0d141911fd6072b720",
+        "version" : "0.1.2"
+      }
+    }
+  ],
+  "version" : 2
+}
