@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 @main
 struct ClipGPTApp: App {
     @StateObject private var appState = AppState()

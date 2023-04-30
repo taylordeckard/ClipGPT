@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A181AD5729F8B1360037DDA1 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = A181AD5629F8B1360037DDA1 /* OpenAI */; };
-		A181AD5929F8BE010037DDA1 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A181AD5829F8BE010037DDA1 /* Keychain.swift */; };
 		A1B22D8C29FAE3E800099860 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B22D8B29FAE3E800099860 /* AppState.swift */; };
+		A1B22D8E29FDFD4900099860 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B22D8D29FDFD4900099860 /* OpenAIService.swift */; };
 		A1CDB5D929F729E400D88CB2 /* ClipGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDB5D829F729E400D88CB2 /* ClipGPTApp.swift */; };
 		A1CDB5DB29F729E400D88CB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDB5DA29F729E400D88CB2 /* ContentView.swift */; };
 		A1CDB5DD29F729E600D88CB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CDB5DC29F729E600D88CB2 /* Assets.xcassets */; };
@@ -39,8 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A181AD5829F8BE010037DDA1 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		A1B22D8B29FAE3E800099860 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A1B22D8D29FDFD4900099860 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
 		A1CDB5D529F729E400D88CB2 /* ClipGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CDB5D829F729E400D88CB2 /* ClipGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipGPTApp.swift; sourceTree = "<group>"; };
 		A1CDB5DA29F729E400D88CB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,8 +111,8 @@
 				A1CDB5DE29F729E600D88CB2 /* ClipGPT.entitlements */,
 				A1CDB5DF29F729E600D88CB2 /* Preview Content */,
 				A1E07FED29F7636B0061A4E2 /* Constants.swift */,
-				A181AD5829F8BE010037DDA1 /* Keychain.swift */,
 				A1B22D8B29FAE3E800099860 /* AppState.swift */,
+				A1B22D8D29FDFD4900099860 /* OpenAIService.swift */,
 			);
 			path = ClipGPT;
 			sourceTree = "<group>";
@@ -282,9 +282,9 @@
 			files = (
 				A1CDB5DB29F729E400D88CB2 /* ContentView.swift in Sources */,
 				A1B22D8C29FAE3E800099860 /* AppState.swift in Sources */,
-				A181AD5929F8BE010037DDA1 /* Keychain.swift in Sources */,
 				A1CDB5D929F729E400D88CB2 /* ClipGPTApp.swift in Sources */,
 				A1E07FEE29F7636B0061A4E2 /* Constants.swift in Sources */,
+				A1B22D8E29FDFD4900099860 /* OpenAIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +441,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ClipGPT/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -477,6 +478,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ClipGPT/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

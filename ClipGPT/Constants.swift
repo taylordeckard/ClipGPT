@@ -8,5 +8,8 @@
 import KeyboardShortcuts
 
 extension KeyboardShortcuts.Name {
-    static let runChatGPT = Self("runChatGPT")
+    static let askChatGPT = Self("askChatGPT")
+}
+extension KeyboardShortcuts.Name {
+    static let editChatGPT = Self("editChatGPT")
 }
